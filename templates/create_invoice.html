@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Invoice | Book_flow</title>
+</head>
+
+<body>
+
+    <h1>Generate Invoice</h1>
+
+    <!-- Select Customer -->
+    <div class="names">
+        <label for="customer">Select Customer:</label>
+
+        <select name="customer" id="customer">
+            <option value="" selected disabled>Select a Customer</option>
+            <option value="customer1">Customer One</option>
+            <option value="customer2">Customer Two</option>
+            <option value="customer3">Customer Three</option>
+        </select>
+    </div>
+
+    <!-- Select Services -->
+    <div class="services_available">
+
+        <h2>Available Services</h2>
+
+        <form>
+
+            <label>
+                <input type="checkbox" id="select-all-services">
+                Select All
+            </label>
+
+            <select name="selected_services" id="service-list" multiple>
+                <option value="service1">Garden Maintenance</option>
+                <option value="service2">Lawn Mowing</option>
+                <option value="service3">Hedge Trimming</option>
+            </select>
+
+            <button type="submit">Submit Selected Services</button>
+
+        </form>
+
+    </div>
+
+    <!-- Existing Invoices -->
+    <div class="invoices_available">
+
+        <h2>Available Invoices</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Invoice No</th>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Total Amount</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>INV-001</td>
+                    <td>Customer One</td>
+                    <td>15 November 2026</td>
+                    <td>R1,500.00</td>
+                    <td>
+                        <button>View</button>
+                        <button>Download</button>
+                        <button>Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+
+    </div>
+
+</body>
+</html>
